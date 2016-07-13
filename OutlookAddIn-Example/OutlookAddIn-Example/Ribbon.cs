@@ -4,12 +4,15 @@ using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 
 namespace OutlookAddIn_Example {
-
    [ComVisible(true)]
    public class Ribbon : Office.IRibbonExtensibility {
       private const string GroupSmile = "Smileys";
       private const string Smile = "Smile";
       private const string TooltipSmile = "This is a tooltip to smile.";
+      private const string HelperSmile = "Don't forget to smile!";
+      private const string GroupInfo = "Info";
+      private const string Info = "Some information about this Outlook Add-In ...";
+      private const string GithubExample = "GitHub-Example";
 
       private Office.IRibbonUI _ribbon;
 
@@ -47,6 +50,27 @@ namespace OutlookAddIn_Example {
 
       public string Button_GetLabel(Office.IRibbonControl control) {
          return Smile;
+      }
+
+      public string Group_GetHelperText(Office.IRibbonControl control) {
+         return HelperSmile;
+      }
+
+      public string GroupInfo_GetLabel(Office.IRibbonControl control) {
+         return GroupInfo;
+      }
+
+      public string Info_GetLabel(Office.IRibbonControl control) {
+         return Info;
+      }
+
+
+      public string TabSmileys_GetLabel(Office.IRibbonControl control) {
+         return GroupSmile;
+      }
+
+      public string LinkDownload_GetLabel(Office.IRibbonControl control) {
+         return GithubExample;
       }
 
       #endregion

@@ -4,9 +4,9 @@
 
   <ribbon>
     <tabs>
-      <!--Email-Tab-->
+      <!--Email-Tab (Create new mail to see this button)-->
       <tab idMso="TabNewMailMessage">
-        <group id="GroupMail" getLabel="Group_GetLabel">
+        <group id="GroupSmileMail" getLabel="Group_GetLabel">
           <button id="SmileButton"
                   size="large"
                   getImage="Button_GetImage"
@@ -17,6 +17,36 @@
       </tab>
     </tabs>
   </ribbon>
+
+  <backstage>
+    <tab id="TabSmileys" getLabel="TabSmileys_GetLabel" columnWidthPercent="30" insertAfterMso="TabPrint"
+         visible="true">
+
+      <firstColumn>
+        <group id="grpSeperator">
+        </group>
+
+        <group id="GroupSmileBackstage" getLabel="Group_GetLabel" getHelperText="Group_GetHelperText">
+          <primaryItem>
+            <button id="buttonSmile" getLabel="Button_GetLabel" getImage="Button_GetImage" onAction="Button_Click" />
+          </primaryItem>
+        </group>
+      </firstColumn>
+
+      <secondColumn>
+
+        <group id="grpInfo" getLabel="GroupInfo_GetLabel">
+          <topItems>
+            <labelControl id="lblInfo" getLabel="Info_GetLabel" />
+            <hyperlink id="linkDownload" getLabel="LinkDownload_GetLabel"
+                       target="https://github.com/jdeigendesch/OutlookAddIn-Example" />
+          </topItems>
+        </group>
+
+      </secondColumn>
+
+    </tab>
+  </backstage>
 
 
 </customUI>
