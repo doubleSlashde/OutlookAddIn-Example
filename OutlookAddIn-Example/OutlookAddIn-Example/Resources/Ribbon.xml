@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+
+  <ribbon>
+    <tabs>
+      <!--Email-Tab-->
+      <tab idMso="TabNewMailMessage">
+        <group id="GroupMail" getLabel="Group_GetLabel">
+          <button id="SmileButton"
+                  size="large"
+                  getImage="Button_GetImage"
+                  onAction="Button_Click"
+                  getScreentip="Button_GetTip"
+                  getLabel="Button_GetLabel" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+
+
+</customUI>
