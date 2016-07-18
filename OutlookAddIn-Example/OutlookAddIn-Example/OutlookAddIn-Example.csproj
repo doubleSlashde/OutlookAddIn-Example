@@ -171,6 +171,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="OutlookAddIn-Example_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -213,7 +214,7 @@
     <ManifestKeyFile>OutlookAddIn-Example_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>5CCD04A7D3DF9DF4D13F2DF6B1BD1AA5831E039A</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9D7C057A87ADAEB88942D928B77589B74EB97E5E</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
