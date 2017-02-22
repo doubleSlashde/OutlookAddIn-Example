@@ -201,7 +201,7 @@
     <EmbeddedResource Include="Resources\Ribbon.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Smile.png" />
+    <Content Include="Resources\World.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

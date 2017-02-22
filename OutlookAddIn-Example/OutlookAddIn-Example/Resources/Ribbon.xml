@@ -6,8 +6,8 @@
     <tabs>
       <!--Email-Tab (Create new mail to see this button)-->
       <tab idMso="TabNewMailMessage">
-        <group id="GroupSmileMail" getLabel="Group_GetLabel">
-          <button id="SmileButton"
+        <group id="GroupHelloMail" getLabel="Group_GetLabel">
+          <button id="HelloButton"
                   size="large"
                   getImage="Button_GetImage"
                   onAction="Button_Click"

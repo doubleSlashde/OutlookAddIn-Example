@@ -67,15 +67,14 @@ namespace OutlookAddIn_Example {
         ///
         ///  &lt;ribbon&gt;
         ///    &lt;tabs&gt;
-        ///      &lt;!--Email-Tab--&gt;
+        ///      &lt;!--Email-Tab (Create new mail to see this button)--&gt;
         ///      &lt;tab idMso=&quot;TabNewMailMessage&quot;&gt;
-        ///        &lt;group id=&quot;GroupMail&quot; getLabel=&quot;Group_GetLabel&quot;&gt;
+        ///        &lt;group id=&quot;GroupSmileMail&quot; getLabel=&quot;Group_GetLabel&quot;&gt;
         ///          &lt;button id=&quot;SmileButton&quot;
         ///                  size=&quot;large&quot;
         ///                  getImage=&quot;Button_GetImage&quot;
         ///                  onAction=&quot;Button_Click&quot;
-        ///                  getScreentip=&quot;Button_GetTip&quot;
-        ///                  getLab [rest of string was truncated]&quot;;.
+        ///                  getScreentip [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Ribbon {
             get {
@@ -86,9 +85,9 @@ namespace OutlookAddIn_Example {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Smile {
+        internal static System.Drawing.Bitmap World {
             get {
-                object obj = ResourceManager.GetObject("Smile", resourceCulture);
+                object obj = ResourceManager.GetObject("World", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
